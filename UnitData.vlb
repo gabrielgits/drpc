@@ -1,0 +1,9 @@
+﻿[FDConnection1]
+Coordinates=0,0,90,33
+
+[FDTableSintomas]
+Coordinates=10,10,101,87
+
+[FDQueryCausas]
+Coordinates=130,1,94,177
+

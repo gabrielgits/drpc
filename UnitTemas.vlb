@@ -1,0 +1,9 @@
+﻿[DataModule1.FDTableConfig]
+Visible=False
+
+[DataModule1.FDQueryCausas]
+Visible=False
+
+[DataModule1.FDTableSintomas]
+Visible=False
+

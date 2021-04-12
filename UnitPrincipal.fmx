@@ -1,0 +1,108 @@
+object FormPrincipal: TFormPrincipal
+  Left = 22
+  Top = 33
+  Caption = 'Inicio'
+  ClientHeight = 471
+  ClientWidth = 308
+  Fill.Kind = Solid
+  Position = Designed
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  Left = 22
+  Top = 33
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Align = Center
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 238.000000000000000000
+    Size.Height = 61.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'ACEITAR e COME'#199'AR'
+    TextSettings.Font.Size = 18.000000000000000000
+    OnClick = Button1Click
+  end
+  object Rectangle2: TRectangle
+    Align = Bottom
+    Fill.Color = claBeige
+    Position.Y = 392.000000000000000000
+    Size.Width = 308.000000000000000000
+    Size.Height = 79.000000000000000000
+    Size.PlatformDefault = False
+    object Layout1: TLayout
+      Align = Center
+      Size.Width = 289.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Button2: TButton
+        Align = Left
+        Size.Width = 120.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Sobre'
+        OnClick = Button2Click
+      end
+      object Button3: TButton
+        Align = Right
+        Position.X = 169.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Temas'
+        OnClick = Button3Click
+      end
+    end
+  end
+  object Text2: TText
+    Align = Top
+    Position.Y = 50.000000000000000000
+    Size.Width = 308.000000000000000000
+    Size.Height = 119.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      'Os criadores do Dr. PC n'#227'o se responsabilizam por qualquer dano ' +
+      'causada ao usar este aplicativo. Estas por sua conta e risco'
+    TextSettings.Font.Family = 'Segoe UI Black'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.FontColor = claSlategray
+  end
+  object Text1: TText
+    Align = Top
+    Size.Width = 308.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'ALIFA 0.1'
+    object Button4: TButton
+      Action = ShowShareSheetAction1
+      Align = Right
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 232.000000000000000000
+      Size.Width = 76.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'actiontoolbutton'
+      TabOrder = 0
+      Text = 'Partilhar Aplicativo'
+    end
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 132
+    Top = 173
+  end
+  object ActionList1: TActionList
+    Left = 32
+    Top = 160
+    object ShowShareSheetAction1: TShowShareSheetAction
+      Category = 'Media Library'
+      OnBeforeExecute = ShowShareSheetAction1BeforeExecute
+    end
+  end
+end

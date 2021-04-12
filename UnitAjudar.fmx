@@ -1,0 +1,51 @@
+object FormTemas: TFormTemas
+  Left = 0
+  Top = 0
+  Caption = 'Form4'
+  ClientHeight = 480
+  ClientWidth = 312
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Bottom
+    Position.Y = 416.000000000000000000
+    Size.Width = 312.000000000000000000
+    Size.Height = 64.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Button1: TButton
+      Align = Center
+      Size.Width = 108.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Aplicar'
+      OnClick = Button1Click
+    end
+  end
+  object Layout2: TLayout
+    Align = Top
+    Size.Width = 312.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object ComboBox1: TComboBox
+      Align = Bottom
+      Items.Strings = (
+        'Padrao'
+        'Kikas'
+        'Branca'
+        'Chely'
+        'She Rod')
+      ItemIndex = 0
+      Position.Y = 80.000000000000000000
+      Size.Width = 312.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+  end
+end
